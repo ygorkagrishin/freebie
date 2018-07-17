@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after
+    box-sizing border-box
+
+html
+    font: 16px / 26px baseFont
+    color primaryBlackColor
+
+.sect
+    position relative
+
+.container
+    width 100%
+    max-width 1200px
+    padding 0 15px
+    margin 0 auto
+
+for $n in (1..6)
+    h{$n}
+        font 36px / 48px baseFontTitle
+
+ul,
+li
+    padding 0
+    margin 0
+    list-style none
+
+p
+    margin 0
+
+a 
+    text-decoration none 
+    color primaryBlackColor
+
+img
+    display inline-block
+    max-width 100%
+
+button 
+    border none
+    margin 0
+    padding 0
+    width auto
+    overflow visible
+    background transparent
+    color inherit
+    font inherit
+    line-height normal
+    -webkit-font-smoothing inherit
+    -moz-osx-font-smoothing inherit
+    -webkit-appearance none

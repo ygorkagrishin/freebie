@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'lato-bold-webfont';
+  src: url("fonts/lato-bold-webfont.woff"), url("fonts/lato-bold-webfont.woff2");
+}
+@font-face {
+  font-family: 'lato-light-webfont';
+  src: url("fonts/lato-light-webfont.woff"), url("fonts/lato-light-webfont.woff2");
+}
+@font-face {
+  font-family: 'lato-regular-webfont';
+  src: url("fonts/lato-regular-webfont.woff"), url("fonts/lato-regular-webfont.woff2");
+}
+@font-face {
+  font-family: 'playfairdisplay-bold-webfont';
+  src: url("fonts/playfairdisplay-bold-webfont.woff"), url("fonts/playfairdisplay-bold-webfont.woff2");
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font: 16px/26px 'lato-light-webfont', sans-serif, arial;
+  color: #2c2a28;
+}
+.sect {
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+h1 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+h2 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+h3 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+h4 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+h5 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+h6 {
+  font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #2c2a28;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 36px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mainnav li:not(:last-child) {
+  margin-right: 30px;
+}
+.mainnav a {
+  font: 16px/36px 'lato-bold-webfont', sans-serif, arial;
+  color: #6c6a68;
+}
+.mainnav a:hover {
+  color: inherit;
+}
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social li:not(:last-child) {
+  margin-right: 24px;
+}
+.social a {
+  display: block;
+}
+.social a.social__bh {
+  width: 27px;
+  height: 16px;
+  background: url("images/sprites/social.png") -10px -10px;
+}
+.social a.social__bh:hover {
+  background: url("images/sprites/social_hover.png") -10px -10px;
+}
+.social a.social__fb {
+  width: 7px;
+  height: 18px;
+  background: url("images/sprites/social.png") -57px -46px;
+}
+.social a.social__fb:hover {
+  background: url("images/sprites/social_hover.png") -57px -46px;
+}
+.social a.social__tw {
+  width: 19px;
+  height: 16px;
+  background: url("images/sprites/social.png") -57px -10px;
+}
+.social a.social__tw:hover {
+  background: url("images/sprites/social_hover.png") -57px -10px;
+}
+.social a.social__inst {
+  width: 18px;
+  height: 18px;
+  background: url("images/sprites/social.png") -10px -46px;
+}
+.social a.social__inst:hover {
+  background: url("images/sprites/social_hover.png") -10px -46px;
+}
+
+/*# sourceMappingURL=styles.min.css.map */
