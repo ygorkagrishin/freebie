@@ -118,6 +118,32 @@ button {
   font-size: 24px;
   line-height: 36px;
 }
+.coll {
+  padding: 120px 0;
+}
+.coll .container {
+  padding: 0;
+}
+.coll__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coll__col {
+  width: 50%;
+}
+.coll__cont {
+  padding: 50px 120px 38px 60px;
+}
+.coll__desc {
+  margin-bottom: 62px;
+}
+.coll__desc h2 {
+  margin-bottom: 42px;
+}
 .btn {
   display: inline-block;
   height: 56px;
