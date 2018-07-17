@@ -77,4 +77,32 @@ block content
                 //- Row-3 end
         //- Collection section end
 
+        //- Contact section
+        section.sect.cont
+            .container
+                .cont__row
+                    .cont__col
+                        .cont__cont
+                            h2.cont__title Get in touch
+
+                            form(action="").form.cont__form
+                                .form__field
+                                    //- #1 input
+                                    label(for="name-id").form__label
+                                    input(type="text", name="name", placeholder="Your Name", id="name-id").form__input
+                                    //- #1 input end
+
+                                    //- #2 input
+                                    label(for="email-id").form__label
+                                    input(type="text", name="email", placeholder="Email", id="email-id").form__input.form__input_type_no-border
+                                    //- #2 input end
+
+                                    //- #3 input
+                                    label(for="message-id").form__label
+                                    textarea(name="message", rows="8", placeholder="Message", id="message-id").form__input
+                                    //- #3 input end
+
+                                button(type="submit").form__btn.form__btn_type_submit.btn.btn_color_golden Send
+        //- Contact section end
+
     // main content end
