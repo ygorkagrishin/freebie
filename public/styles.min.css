@@ -34,21 +34,27 @@ html {
   margin: 0 auto;
 }
 h1 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 h2 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 h3 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 h4 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 h5 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 h6 {
+  margin: 0;
   font: 36px/48px 'playfairdisplay-bold-webfont', sans-serif, arial;
 }
 ul,
@@ -82,6 +88,62 @@ button {
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 }
+.hero {
+  background: url("images/content/hero/backgroundImageHero.png") no-repeat center/cover;
+}
+.hero__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.hero__col {
+  width: 100%;
+}
+.hero__cont {
+  text-align: center;
+}
+.hero__desc {
+  margin-bottom: 124px;
+}
+.hero__title {
+  font-size: 60px;
+  line-height: 90px;
+  color: #c0a064;
+}
+.hero__title + span {
+  font-size: 24px;
+  line-height: 36px;
+}
+.btn {
+  display: inline-block;
+  height: 56px;
+  padding: 0 60px;
+  font: 18px 'lato-bold-webfont', sans-serif, arial;
+  line-height: 52px;
+  text-transform: uppercase;
+  border: 2px solid #2c2a28;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn_color_golden {
+  color: #c0a064;
+  border-color: #c0a064;
+}
+.btn:hover {
+  opacity: 1;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +173,9 @@ button {
 }
 .mainnav a:hover {
   color: inherit;
+}
+.banner a {
+  display: inline-block;
 }
 .social ul {
   display: -webkit-box;

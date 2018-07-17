@@ -5,9 +5,34 @@
 
 @import 'layout/_layout.styl'
 
+.hero
+    background url('images/content/hero/backgroundImageHero.png') no-repeat center / cover
 
+.hero__row
+    display flex
+    align-items center
+    height 100vh
 
+.hero__col
+    width 100%
+
+.hero__cont
+    text-align center
+
+.hero__desc
+    margin-bottom 124px
+
+.hero__title
+    font-size 60px
+    line-height 90px
+    color primaryGoldenColor
+    & + span 
+        font-size 24px
+        line-height 36px
+
+@import 'components/_buttons.styl'
 @import 'components/_header.styl'
 @import 'components/_nav.styl'
+@import 'components/_logo.styl'
 @import 'components/_social.styl'
 @import 'components/_footer.styl'
