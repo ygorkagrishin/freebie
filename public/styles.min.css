@@ -72,7 +72,7 @@ a {
 }
 img {
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
 }
 button {
   border: none;
@@ -118,6 +118,36 @@ button {
 .hero__title + span {
   font-size: 24px;
   line-height: 36px;
+}
+.recent {
+  padding: 120px 0;
+}
+.recent__title {
+  margin-bottom: 58px;
+  text-align: center;
+}
+.recent__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recent__row:not(:last-child) {
+  margin-bottom: 20px;
+}
+.recent__col {
+  width: 100%;
+}
+.recent__col_desktop_md {
+  width: 66%;
+}
+.recent__col_desktop_sm {
+  width: 31.5%;
+}
+.recent__col_desktop_sm .recent__work:not(:last-child) {
+  margin-bottom: 27px;
 }
 .coll {
   padding: 120px 0;
