@@ -267,8 +267,14 @@ button {
 .coll__col {
   width: 50%;
 }
+.coll__col .coll__img {
+  height: 100%;
+}
+.coll__col .coll__img img {
+  height: inherit;
+}
 .coll__cont {
-  padding: 54px 120px 38px 60px;
+  padding: 54px 120px 38px 58px;
 }
 .coll__desc {
   margin-bottom: 56px;
