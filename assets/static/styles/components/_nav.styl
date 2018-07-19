@@ -1,12 +1,29 @@
 .mainnav
+    @media (orientation portrait) and (max-width 1024px)
+        position fixed
+        top 0
+        left 0
+        z-index $z-index2
+        display none
+        width 100%
+        height 100%
     ul 
         display flex
         align-items center
+        @media (orientation portrait) and (max-width 1024px)
+            width 100%
+            height 100%
+            flex-direction column
+            justify-content center
+            background-color #fff
     li
         &:not(:last-child)
             margin-right 30px
+            @media (orientation portrait) and (max-width 1024px)
+                margin 0 0 30px 0
     a
         font 16px / 36px baseFontBold
         color primaryGreyColor
         &:hover
             color inherit
+        

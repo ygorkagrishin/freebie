@@ -14,3 +14,27 @@
     &:hover
         opacity 1
     
+.navbar-toggle
+    position relative
+    z-index $z-index1
+    display none
+    width 30px
+    @media (orientation portrait) and (max-width 1024px)
+        display block
+    span 
+        display block
+        height 2px
+        background-color primaryBlackColor
+        transition all .3s
+        &:first-child
+            transform rotate(-45deg)
+        &:last-child
+            transform rotate(45deg) translate(-1px, -1px)
+    &.collapsed
+        span 
+            transform rotate(0) translate(0, 0)
+            &:not(:last-child)
+                margin-bottom 6px
+    
+            
+

@@ -160,6 +160,39 @@ button {
 .btn:hover {
   opacity: 1;
 }
+.navbar-toggle {
+  position: relative;
+  z-index: 9999999;
+  display: none;
+  width: 30px;
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+.navbar-toggle span {
+  display: block;
+  height: 2px;
+  background-color: #2c2a28;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar-toggle span:first-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.navbar-toggle span:last-child {
+  -webkit-transform: rotate(45deg) translate(-1px, -1px);
+          transform: rotate(45deg) translate(-1px, -1px);
+}
+.navbar-toggle.collapsed span {
+  -webkit-transform: rotate(0) translate(0, 0);
+          transform: rotate(0) translate(0, 0);
+}
+.navbar-toggle.collapsed span:not(:last-child) {
+  margin-bottom: 6px;
+}
 .form {
   max-width: 370px;
   margin: 0 auto;
@@ -247,7 +280,7 @@ button {
 .recent__col_desktop_sm {
   width: 31.5%;
 }
-.recent__col_desktop_sm .recent__work:not(:last-child) {
+.recent__col_desktop_sm .recent__work`:not(:last-child) {
   margin-bottom: 27px;
 }
 .coll {
@@ -292,6 +325,17 @@ button {
   margin-bottom: 48px;
   text-align: center;
 }
+@media (orientation: portrait) and (max-width: 1024px) {
+  .mainnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+}
 .mainnav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,8 +344,27 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (orientation: portrait) and (max-width: 1024px) {
+  .mainnav ul {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+  }
+}
 .mainnav li:not(:last-child) {
   margin-right: 30px;
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .mainnav li:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
 }
 .mainnav a {
   font: 16px/36px 'lato-bold-webfont', sans-serif, arial;
@@ -328,6 +391,30 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .header__inner {
+    padding: 28px 24px;
+  }
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .header__navbar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .header__banner {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .header__social {
+    display: none;
+  }
 }
 .footer {
   padding-bottom: 60px;
