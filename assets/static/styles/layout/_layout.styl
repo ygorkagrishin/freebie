@@ -11,10 +11,12 @@ html
     position relative
 
 .container
-    width 100%
+    width 98%
     max-width 1200px
     padding 0 15px
     margin 0 auto
+    @media (orientation portrait) and (max-width 1024px)
+        max-width 720px
 
 for $n in (1..6)
     h{$n}

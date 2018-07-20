@@ -45,30 +45,57 @@
 .recent__row
     display flex
     justify-content: space-between
+    @media (orientation portrait) and (max-width 1024px)
+        flex-direction column
     &:not(:last-child)
         margin-bottom 20px
+        @media (orientation portrait) and (max-width 1024px)
+            margin-bottom 22px
 
 .recent__col
     width 100%
     &_desktop_md
         width 66%
+        @media (orientation portrait) and (max-width 1024px)
+            width 100%
+            margin-bottom 21px
     &_desktop_sm
         width 31.5%
-        .recent__work`
+        @media (orientation portrait) and (max-width 1024px)
+            width 100%
+            display flex
+            justify-content space-between
+        .recent__work
             &:not(:last-child)
                 margin-bottom 27px
+                @media (orientation portrait) and (max-width 1024px)
+                    margin 0 27px 0 0
 
 .coll
     padding 118px 0
     .container
         padding 0
+        @media (orientation portrait) and (max-width 1024px)
+            padding 0 15px
 
 .coll__row
     display flex
     justify-content space-between
+    @media (orientation portrait) and (max-width 1024px)
+        flex-direction column
+        text-align center
+        &:nth-child(even)
+            .coll__col:first-child
+                order 2
+            .coll__col:last-child
+                order 1
+        &:not(:last-child)
+            margin-bottom 120px
 
 .coll__col
     width 50%
+    @media (orientation portrait) and (max-width 1024px)
+        width 100%
     .coll__img
         height 100%
         img 
@@ -76,6 +103,10 @@
 
 .coll__cont
     padding 54px 120px 38px 58px
+    @media (orientation portrait) and (max-width 1024px)
+        max-width 420px
+        padding 46px 0 0 0
+        margin 0 auto
 
 .coll__desc 
     margin-bottom 56px
@@ -87,6 +118,8 @@
 
 .cont
     padding 120px 0 52px 0
+    @media (orientation portrait) and (max-width 1024px)
+        padding 112px 0 52px 0
 
 .cont__title
     margin-bottom 48px
