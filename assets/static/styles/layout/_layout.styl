@@ -4,7 +4,7 @@
     box-sizing border-box
 
 html
-    font: 16px / 26px baseFont
+    font: 1em / 1.625em baseFont
     color primaryBlackColor
 
 .sect
@@ -12,16 +12,19 @@ html
 
 .container
     width 98%
-    max-width 1200px
-    padding 0 15px
+    max-width (1200em/16)
+    padding 0 1em
     margin 0 auto
     @media (orientation portrait) and (max-width 1024px)
-        max-width 720px
+        max-width (720em/16)
 
 for $n in (1..6)
     h{$n}
         margin 0
-        font 36px / 48px baseFontTitle
+        font-size (36em/16)
+        line-height (48em/36)
+        font-family baseFontTitle
+        // font 2.25em / 48px baseFontTitle
 
 ul,
 li

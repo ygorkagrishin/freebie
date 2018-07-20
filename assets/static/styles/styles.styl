@@ -25,21 +25,21 @@
     text-align center
 
 .hero__desc
-    margin-bottom 116px
+    margin-bottom (116em/16)
 
 .hero__title
-    font-size 60px
-    line-height 90px
+    font-size (60em/16)
+    line-height (90em/60)
     color primaryGoldenColor
     & + span 
-        font-size 28px
-        line-height 41px
+        font-size (28em/16)
+        line-height (41em/28)
 
 .recent
-    padding 114px 0
+    padding (114em/16) 0
 
 .recent__title
-    margin-bottom 46px
+    margin-bottom (46em/16)
     text-align center
 
 .recent__row
@@ -48,9 +48,9 @@
     @media (orientation portrait) and (max-width 1024px)
         flex-direction column
     &:not(:last-child)
-        margin-bottom 20px
+        margin-bottom (20em/16)
         @media (orientation portrait) and (max-width 1024px)
-            margin-bottom 22px
+            margin-bottom (22em/16)
 
 .recent__col
     width 100%
@@ -58,7 +58,7 @@
         width 66%
         @media (orientation portrait) and (max-width 1024px)
             width 100%
-            margin-bottom 21px
+            margin-bottom (21em/16)
     &_desktop_sm
         width 31.5%
         @media (orientation portrait) and (max-width 1024px)
@@ -67,16 +67,16 @@
             justify-content space-between
         .recent__work
             &:not(:last-child)
-                margin-bottom 27px
+                margin-bottom (27em/16)
                 @media (orientation portrait) and (max-width 1024px)
-                    margin 0 27px 0 0
+                    margin 0 (27em/16) 0 0
 
 .coll
     padding 118px 0
     .container
         padding 0
         @media (orientation portrait) and (max-width 1024px)
-            padding 0 15px
+            padding 0 1em
 
 .coll__row
     display flex
@@ -90,7 +90,7 @@
             .coll__col:last-child
                 order 1
         &:not(:last-child)
-            margin-bottom 120px
+            margin-bottom (120em/16)
 
 .coll__col
     width 50%
@@ -102,27 +102,27 @@
             height inherit
 
 .coll__cont
-    padding 54px 120px 38px 58px
+    padding (54em/16) (120em/16) (38em/16) (58em/16)
     @media (orientation portrait) and (max-width 1024px)
-        max-width 420px
-        padding 46px 0 0 0
+        max-width (420em/16)
+        padding (46em/16) 0 0 0
         margin 0 auto
 
 .coll__desc 
-    margin-bottom 56px
+    margin-bottom (56em/16)
     h2
-        margin-bottom 22px
+        margin-bottom (22em/36)
 
 .coll__btn
-    padding 0 56px
+    padding 0 (56em/18)
 
 .cont
-    padding 120px 0 52px 0
+    padding (120em/16) 0 (52em/16) 0
     @media (orientation portrait) and (max-width 1024px)
-        padding 112px 0 52px 0
+        padding (112em/16) 0 (52em/16) 0
 
 .cont__title
-    margin-bottom 48px
+    margin-bottom (48em/16)
     text-align center
 
 @import 'components/_nav.styl'
